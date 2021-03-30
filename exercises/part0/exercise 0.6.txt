@@ -1,0 +1,13 @@
+title exercise 0.6
+
+
+note over browser:
+After user input and push the save button, data is sent through POST method
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: status 201: response {"message":"note created"}, payload {content, date}
+
+note over browser:
+new note appending in browser's list without reload
+end note
